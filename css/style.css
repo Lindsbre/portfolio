@@ -45,7 +45,7 @@ main {
     background-color: #fefdff;
 }
 
-/* .skip a {
+a.skip {
     background: white;
     left: 0;
     padding: 6px;
@@ -56,12 +56,11 @@ main {
     z-index: 1;
   } 
   
-.skip a :focus{
-    position: relative;
-    top: 20px;
+a.skip:focus{
+    top: 10px;
     color: black;
     text-decoration-style: solid;
-}  */
+} 
 
 /* About page */
 
@@ -71,7 +70,7 @@ main {
     
 }
 
-.hello h2 {
+.hello h3 {
     text-align: left;
     font-size: 22px;
 }
@@ -86,8 +85,6 @@ main {
 
 .hello img {
     display: flex;
-    max-width: 421px;
-    max-height: 421px;
     align-self: center;
 }
 
@@ -119,6 +116,12 @@ main {
     font-weight: bold;
 }
 
+.ey {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 /* Introduction page */
 
 .full-introduction {
@@ -130,8 +133,9 @@ main {
 }
 
 .headshot {
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    height: auto;
+    margin: auto;
 }
 
 .full-introduction h2{
@@ -203,8 +207,7 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9);
+    grid-template-rows: repeat(9, auto);
     grid-gap: 30px;
 }
 
@@ -221,4 +224,104 @@ footer{
     padding-bottom: 15px;
     text-align: center;
     vertical-align: auto;
+}
+
+@media screen and (min-width: 760px){
+
+    /* About me page */
+
+    .hello {
+        display: grid;
+        grid-template-rows: 25% 75%;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        padding-bottom: 30px;
+        align-content: center;
+    }
+
+    .hello h3 {
+        grid-row: 1;
+        grid-column: 2;
+        text-align: left;
+        font-size: 26px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 15px;
+    }
+    
+    .hello h1 {
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    
+    .hello img {
+        grid-column: 1;
+        grid-row: 1/-1;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .read-more h2 {
+        font-size: 28px;
+    }
+
+    #overview {
+        font-size: 22px;
+    }
+    
+    #newyork {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Introduction page */
+
+    .headshot {
+        width: 40%;
+    }
+    
+    .full-introduction p{
+        font-size: 18px;
+    }
+
+    .full-introduction h2{
+        font-size: 26px;
+    }
+    
+    #future {
+        font-size: 22px;
+    }
+
+    /* Experience page */
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 30px;
+    }
+    
+    .grid-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-one {
+        grid-row: 1;
+        grid-column: 1/-1;
+    }
+
+    .img-eight {
+        grid-row: 6;
+        grid-column: 1/-1;
+    } 
+
 }

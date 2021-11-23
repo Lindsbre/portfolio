@@ -70,7 +70,7 @@ a.skip:focus{
     
 }
 
-.hello h3 {
+.hello h2 {
     text-align: left;
     font-size: 22px;
 }
@@ -239,7 +239,7 @@ footer{
         align-content: center;
     }
 
-    .hello h3 {
+    .hello h2 {
         grid-row: 1;
         grid-column: 2;
         text-align: left;

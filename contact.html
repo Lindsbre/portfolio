@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="shortcut icon" href="images/bitmoji.png" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Crimson+Text&family=Libre+Baskerville&family=Merriweather:wght@300&family=Poppins:wght@300&family=Questrial&display=swap" rel="stylesheet">
+      <title>Contact Me</title>
+    </head>
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+      <nav>
+          <h1>Lindsay Brenner</h1>
+          <ul class="nav_links">
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html"  id='active-page'>Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main">
+        <div class="form"></div>
+        <form action="https://formspree.io/f/mwkyezrg" method="POST">
+            <fieldset>
+                <label for="name_id">Your Name</label>
+                <input type="text" placeholder="Enter Your Name" id="name_id" name="name" required>
+            
+                <label for="email_id">Your Email</label>
+                <input type="email" placeholder="Enter Your Email" id="email_id" name="email" required>
+            
+                <label for="phone_id">Your Phone Number</label>
+                <input type="tel" id ="phone_id" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            
+                <label for="message">Leave A Message</label>
+                <textarea placeholder="Enter your message" id="message" name="mesg" required></textarea><br>
+        
+                <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+        </main>
+    <footer>
+      <p><a href="mailto: Lindsbre@umich.edu">Lindsbre@umich</a> | 516.712.5419 | 
+          <a href="https://www.linkedin.com/in/lindsay-brenner/" target="_blank">Linkedin</a></br> 
+          &copy;Lindsay Brenner 2021</p>
+  </footer>
+  </body>
+</html>

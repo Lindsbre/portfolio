@@ -427,12 +427,28 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    
+    .nav_links {
+        font-size: 22px;
+    }
+
+    #active-page {
+        font-size: 28px;
     }
 
     .nav_links {
         display: flex;
         flex-direction: row;
+        width: 60%;
         justify-content: space-between;
         align-content: flex-end;
     }

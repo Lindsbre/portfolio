@@ -38,7 +38,7 @@ h1 {
     font-size: 24px;
     color: #000000;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 main {
@@ -265,6 +265,18 @@ a.skip:focus{
 }
 
 /* Contact Page */
+
+.parallax{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 380px;
+    background-image: URL('../images/thank-you.jpeg');
+    background-repeat: no-repeat;
+}
 
 label{
     display: block;

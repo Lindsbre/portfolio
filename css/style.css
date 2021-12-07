@@ -126,16 +126,6 @@ a.skip:focus{
 
 /* flip card */
 
-/* .flip-card {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; Remove this if you don't want the 3D effect 
-} */
-
 .flip-card {
     background-color: transparent;
     max-width: 400px;
@@ -349,12 +339,10 @@ a.skip:focus{
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 30px;
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center; /* Parallax effect */
-    background-size: cover; /* Parallax effect */
     height: 380px;
     background-image: URL('../images/thank-you.jpeg');
-    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
 }
 
 label{
@@ -670,11 +658,57 @@ footer{
     input[type=submit] {
         width: 50%;
     }
+
+    .parallax{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+        background-attachment: fixed; /* Parallax effect */
+        background-position: center; /* Parallax effect */
+        background-size: cover; /* Parallax effect */
+        height: 380px;
+        background-image: URL('../images/thank-you.jpeg');
+        background-repeat: no-repeat;
+    }
      
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-   
+
+/* flip card transition */
+
+.flip-card-inner {
+    transition: none;
+    /* transform-style: preserve-3d; */
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: none;
+}
+
+/* Style the back side */
+.flip-card-back {
+    visibility: hidden;
+    transform: none;
+}
+
+/* end of flip card transition */
+
+/* Photo gallery transition */
+
+.one-text, .two-text, .three-text, .four-text, .five-text, .six-text, .seven-text, .eight-text, .nine-text, .ten-text {
+    /* -webkit-transition: visibility 0s, opacity 0.5s linear; */
+    transition: none;
+}
+
+.img-one:hover .one-text, .img-two:hover .two-text, .img-three:hover .three-text, .img-four:hover .four-text, .img-five:hover .five-text, .img-six:hover .six-text, .img-seven:hover .seven-text, .img-eight:hover .eight-text, .img-nine:hover .nine-text, .img-ten:hover .ten-text{
+    opacity: 0;
+    visibility: hidden; 
+}
+
+/* end of photo glaery transition */
+
 }
 
 

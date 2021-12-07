@@ -219,23 +219,8 @@ a.skip:focus{
 
 /* Experience page */
 
-.contents {
-    border-bottom: solid 4px #886d99;
-    padding-bottom: 30px;
-    width: 100%;
-}
-
-.contents a {
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .experience {
     padding-bottom: 15px;
-    padding-top: 15px;
     border-bottom: solid 4px #886d99;
 }
 

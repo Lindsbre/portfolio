@@ -138,17 +138,21 @@ a.skip:focus{
 
 .flip-card {
     background-color: transparent;
-    width: 400px;
+    max-width: 400px;
     height: 200px;
-    perspective: 1000px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -163,7 +167,7 @@ a.skip:focus{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    /* -webkit-backface-visibility: hidden; Safari */
     backface-visibility: hidden;
 }
   
@@ -171,20 +175,21 @@ a.skip:focus{
 .flip-card-front {
     margin-left: auto;
     margin-right: auto; 
+    align-items: center;
 }
 
 /* Style the back side */
 .flip-card-back {
-    width:auto;
-    height: auto;
+    /* width:auto;
+    height: auto; */
     font-size: 22px;
     padding: 5px;
     background-color: #e0d6e6;
     border: 4px solid #886d99;
     color: #000000;
     transform: rotateY(180deg);
-    margin-top: auto;
-    margin-bottom: auto;
+    /* margin-top: auto;
+    margin-bottom: auto; */
 }
 
 /* end of flip card */
@@ -637,3 +642,9 @@ footer{
     }
      
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+   
+}
+
+
